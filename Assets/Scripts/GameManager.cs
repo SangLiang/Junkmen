@@ -47,8 +47,16 @@ public class GameManager : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
+        if (playerTurn || enemiesMoving)
+            return;
+
+        StartCoroutine(MoveEnemies());
+        
 	}
+
+    public void AddEnemyToList(Enemy script){
+        enemies.Add(script);
+    }
 
 
 	IEnumerator MoveEnemies(){
@@ -57,6 +65,14 @@ public class GameManager : MonoBehaviour {
         if(enemies.Count == 0){
             yield return new WaitForSeconds(turnDelay);
         }
+        for (int i = 0; i < enemies.Count;i++ )
+        {
+            enemies[i].MoveEnemy();
+            yield return new WaitForSeconds(enemies[i].moveTime);
+        }
+        playerTurn = true;
+        enemiesMoving = false;
+
 	}
 
 

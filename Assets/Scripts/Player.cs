@@ -85,7 +85,7 @@ public class Player : MoveObject
     protected override void OnCantMove<T>(T component) {
         Wall hitWall = component as Wall;
         hitWall.DamageWall(wallDamage);
-        animator.SetTrigger("playerHurts");
+        animator.SetTrigger("playerAttack");
     }
 
     private void ReStart() {
@@ -93,7 +93,7 @@ public class Player : MoveObject
     }
 
     public void loseFood(int loss) {
-        animator.SetTrigger("playerAttack");
+        animator.SetTrigger("playerHurts");
         food -= loss;
         CheckGameOver();
     }
