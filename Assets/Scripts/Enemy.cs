@@ -59,7 +59,7 @@ public class Enemy : MoveObject {
         animator.SetTrigger("enemyAttack");
         hitPlayer.loseFood(playerDamage);
 
-        throw new System.NotImplementedException();
+       // throw new System.NotImplementedException();
     }
 
 

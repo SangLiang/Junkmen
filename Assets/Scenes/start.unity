@@ -277,6 +277,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11432248, guid: 7430a94d77395f0498cb0833e3733ba6, type: 2}
+      propertyPath: foodText
+      value: 
+      objectReference: {fileID: 1195977598}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7430a94d77395f0498cb0833e3733ba6, type: 2}
   m_RootGameObject: {fileID: 1284879678}
@@ -410,8 +414,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: .5, y: 0}
   m_AnchorMax: {x: .5, y: .119999997}
-  m_AnchoredPosition: {x: 0, y: 19}
-  m_SizeDelta: {x: 160, y: -9}
+  m_AnchoredPosition: {x: 0, y: 11.75}
+  m_SizeDelta: {x: 160, y: -23.5}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1195977598
 MonoBehaviour:
@@ -484,6 +488,7 @@ MonoBehaviour:
   wallDamage: 1
   pointPerFood: 10
   pointPerSoda: 20
+  foodText: {fileID: 1195977598}
   restartLevelDelay: 1
 --- !u!61 &1284879680
 BoxCollider2D:
@@ -580,7 +585,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1498642146
 MonoBehaviour:
   m_ObjectHideFlags: 0

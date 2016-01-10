@@ -1,7 +1,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{84DF0FF5-81D4-26AA-8B29-E406A65D3BE2}") = "Junkman", "Assembly-CSharp.csproj", "{32EF243A-2F5A-26D6-22FD-2AFC4145A707}"
+Project("{4A4687A1-7025-29C1-0F8E-2DF234CDC202}") = "Junkmen", "Assembly-CSharp-vs.csproj", "{5DBCB0CD-58A0-B503-7C98-C3C86C5BD5D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,10 +9,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{32EF243A-2F5A-26D6-22FD-2AFC4145A707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{32EF243A-2F5A-26D6-22FD-2AFC4145A707}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{32EF243A-2F5A-26D6-22FD-2AFC4145A707}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{32EF243A-2F5A-26D6-22FD-2AFC4145A707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBCB0CD-58A0-B503-7C98-C3C86C5BD5D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBCB0CD-58A0-B503-7C98-C3C86C5BD5D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBCB0CD-58A0-B503-7C98-C3C86C5BD5D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBCB0CD-58A0-B503-7C98-C3C86C5BD5D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
