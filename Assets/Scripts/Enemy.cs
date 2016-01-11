@@ -5,6 +5,9 @@ public class Enemy : MoveObject {
     public int playerDamage;
     private Animator animator;
     private Transform target;
+
+    public AudioClip attck1;
+    public AudioClip attck2;
    
 
     private bool skipMove;
@@ -57,6 +60,7 @@ public class Enemy : MoveObject {
         Player hitPlayer = component as Player;
 
         animator.SetTrigger("enemyAttack");
+        SoundManager.instance.RandomizeSfx(attck1,attck2);
         hitPlayer.loseFood(playerDamage);
 
        // throw new System.NotImplementedException();
